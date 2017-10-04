@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('lmmbbtfy App', () => {
+describe('angular4-lmgtfy App', () => {
   let page: AppPage;
 
   beforeEach(() => {
