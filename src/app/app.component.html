@@ -11,15 +11,13 @@
     <input #inputBox type="text" value="" disabled>
 
     <div class="button-wrapper">
-      <input type="button" value="Google Search" [ngClass]="{'active' : buttonClicked }" disabled>
+      <input type="button" value="Google Search" #submitButton [ngClass]="{'active' : buttonClicked }" disabled>
       <input type="button" value="I'm Feeling Lucky" disabled>
     </div>
   </form>
 </div>
 
-
-
-<div class="fakemouse" (@moveToInput.done)="onMoveDone($event)" [@moveToInput]="state" [@moveToButton]="state2"(@moveToButton.done)="onMoveDone2($event)">
+<div class="fakemouse" #fakePointer>
   <i class="fa fa-mouse-pointer fa-fw fa-2x"></i>
 </div>
 
